@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Blog Template · Tarea 02</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+<main class="container">
+    <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark"  >Universidad De Las Fuerzas Armadas "ESPE"</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+         
+        </a>
+       
+      </div>
+    </div>
+  </header>
+
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">DOM HTML de JavaScript</h1>
+      <p class="lead my-3">Con HTML DOM, JavaScript puede acceder y cambiar todos los elementos de un documento HTML.</p>
+    </div>
+  </div>
+
+  
+
+  <div class="row g-5">
+    <div class="col-md-8">
+
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Reaccionar a los eventos</h2>
+
+
+        <p>Un JavaScript se puede ejecutar cuando ocurre un evento, como cuando un usuario hace clic en un elemento HTML. <br>Para ejecutar código cuando un usuario hace clic en un elemento, agregue código JavaScript a un atributo de evento HTML: <i>onclick=JavaScript</i></p>
+        <hr>
+        <ul>
+          <li>Cuando un usuario hace clic con el mouse</li>
+          <li>Cuando se ha cargado una página web</li>
+          <li>Cuando se ha cargado una imagen</li>
+          <li>Cuando el mouse se mueve sobre un elemento</li>
+          <li>Cuando se cambia un campo de entrada</li> 
+          <li>Cuando se envía un formulario HTML</li>
+          <li>Cuando un usuario pulsa una tecla</li>
+        </ul>
+        <p>En el siguiente ejemplo el contenido de 'h1' cambia cuando se da click sobre el <br> <img src="./img/ej1.png"></p>
+       
+        <h2>Atributos de eventos HTML</h2>
+        <p>Para asignar eventos a elementos HTML, s epuede utilizar atributos de eventos como el que se presenta a continuacion:  <br><img src="./img/ej2.png" > <br>En el ejemplo anterior, displayDatese ejecutará una función nombrada cuando se haga clic en el botón.</p>
+        <h3>Asignar eventos usando el DOM HTML</h3>
+        <p>El DOM HTML le permite asignar eventos a elementos HTML usando JavaScript, en el siguiente ejemplo se presenta como asignar un evento onclick a un elemento de boton<br> <img src="./img/ej3.png"> <br>En el ejemplo anterior, una función nombrada displayDatese asigna a un elemento HTML con la extensión id="myBtn". <br>La función se ejecutará cuando se haga clic en el botón.
+      </p>
+      <h3>Los eventos onload y onunload</h3>
+        <p>Los eventos onloady onunloadse activan cuando el usuario entra o sale de la página. <br>El onloadevento se puede utilizar para verificar el tipo de navegador del visitante y la versión del navegador, y cargar la versión adecuada de la página web según la información. <br>Los eventos onloady onunloadse pueden utilizar para gestionar las cookies.
+          <br>en el siguiente ejemplo se muestra mas a detalle: <br> <img src="./img/ej4.png" alt=""> 
+          </p>
+        
+       <h2 class="blog-post-title">El evento onchange</h2>
+        <p>El onchangeevento se usa a menudo en combinación con la validación de los campos de entrada. <br> A continuación se muestra un ejemplo de cómo utilizar onchange. La upperCase() función se llamará cuando un usuario cambie el contenido de un campo de entrada. <img src="./img/ej5.png" alt=""></p>
+        
+        <h2>Los eventos onmouseover y onmouseout y onclick</h2>
+        <p>Las onmousedown, onmouseupy onclicklos acontecimientos son todos partes de un clic del ratón. Primero, cuando se hace clic en un botón del mouse, se activa el evento onmousedown, luego, cuando se suelta el botón del mouse, se activa el evento onmouseup, finalmente, cuando se completa el clic del mouse, se activa el evento onclick. <br><img src="./img/ej6.png" alt=""></p>
+
+            <h2 class="blog-post-title">Colecciones JavaScript HTML DOM</h2>        
+        <h2>El objeto HTMLCollection</h2>
+        <p>El getElementsByTagName()método devuelve un HTMLCollectionobjeto. <br>Un HTMLCollectionobjeto es una lista (colección) parecida a una matriz de elementos HTML. <br> El siguiente código selecciona todos los'p' elementos de un documento: <br><img src="./img/ej7.png" alt=""> <br> Se puede acceder a los elementos de la colección mediante un número de índice. Para acceder al segundo elemento 'p' puede escribir: <i>myCollection[1]</i> <br> Nota: el índice comienza en 0.</p>
+
+
+
+
+        <h2>Longitud de la colección HTML HTMLC</h2>
+        <p>La length propiedad define el número de elementos en un HTMLCollection: <br><img src="./img/ej8.png" alt=""> <br>La length propiedad es útil cuando desea recorrer los elementos de una colección: <br> El siguiente ejemplo cambia el dolor del texto en todos los elementos 'p' <br><img src="./img/ej9.png" alt=""></p>
+          <p><i>¡Una HTMLCollection NO es una matriz! <br>Una colección HTMLCollection puede parecer una matriz, pero no lo es. <br>Puede recorrer la lista y hacer referencia a los elementos con un número (como una matriz). <br>Sin embargo, no puede usar métodos de matriz como valueOf (), pop (), push () o join () en una HTMLCollection.</i></p>
+
+        <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        JS HTML DOM Avanzado
+      </h3>
+      
+      <article class="blog-post">
+        <!-- Comienzo parte events listener-->
+        <h2 class="blog-post-title">Event Listener</h2>
+
+        <p>El event listener es un método que controla cuando, cómo y en dónde se va a dar un elemento especificado por el usuario</p>
+        <p>Se pueden añadir varios controladores de eventos a un mismo elemento sin sobreecribirlos</p>
+        <p>Se usan dos event listeners:</p>
+        <ul>
+          <li>addEventListener(): Para añadir un controlador de eventos.</li>
+          <li>removeEventListener(): Para eliminar un controlador de eventos.</li>
+        </ul>
+
+        <hr>
+        <h2>Sintaxis para los event listener</h2>
+        <blockquote class="blockquote">
+          <pre><code>elemento.addEventListener(evento, función, useCapture)</code></pre>
+        </blockquote>
+        <ul>
+          <li><strong>evento:</strong> Para el tipo de evento con el que se quiera accionar la acción. </li>
+          <li><strong>función:</strong> Para la función que se va a ejecutar una vez que se de el evento.</li>
+          <li><strong>useCapture:</strong> Es un parámetro opcional en el cual se especifica si se va a usar una captura de eventos o un burbujeo de eventos.</li>
+        </ul>
+        
+        <dt></dt>
+        <p>Para que se entienda de una mejor manera, se presenta este sencillo ejemplo</p>
+        <p class="blog-post-meta">A continuación se agregará un controlador de evento en el cual si el usuario da click en el botón de "Go", aparecerá otro texto además del que ya se encuentra por defecto.</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigoevento.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve el antes y después en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/eventoantes.png" class="bd-placeholder-img" width="350" height="100" >
+          <img src="img/eventodespues.png" class="bd-placeholder-img" width="350" height="150" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <hr>
+        <p>Como se dijo en la definición, se pueden agregar varios controladores a un mismo evento por lo que ahora se verá un ejemplo sobre eso.</p>
+        <p class="blog-post-meta">En esta ocasión se implementaron 3 controladores para un mismo elemento, una acción se ejecuta al poner el mouse encima del botón "Go", otra se ejecuta al quitar el mouse del mismo botón y al hacer click sobre ese botón se imprime la palabra "Alto" y se borran los dos eventos antes mencionados.</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigovarios.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve el antes y después en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/variosantes.png" class="bd-placeholder-img" width="350" height="100" >
+          <img src="img/variosdespues.png" class="bd-placeholder-img" width="350" height="150" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    <hr>
+        <p>También se pueden pasar parámetros en un Event Listener, tal y como se puede apreciar en el siguiente ejemplo</p>
+        <p class="blog-post-meta">Aquí se pasan dos parámetros para que al dar click se multipliquen ambos números.</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigomult.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve el antes y después en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/multantes.png" class="bd-placeholder-img" width="350" height="100" >
+          <img src="img/multdespues.png" class="bd-placeholder-img" width="350" height="150" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <h2 class="blog-post-title">DOM Navigation</h2>
+  <p>Sirve para navegar dentro de todos los elementos de un documento HTML.</p>
+        <hr>
+<dt>Nodos DOM</dt>
+    <p>Todo dentro de un documento HTML es un nodo, cada elemento, texto, cada atributo y todos sus comentarios.</p>
+    <div class="col-auto d-none d-lg-block">
+          <img src="img/nodos.png" class="bd-placeholder-img" width="100%" height="100%" >
+
+        </div>
+<dt>Relaciones de nodo</dt>
+        <p>Un node tree tiene relaciones jerárquicas, los padres, hijos y hermanos son estas relaciones, siendo el nodo superior la llamada raíz</p>
+        <p>Cada nodo tiene un padre (exceptuando la raíz), un nodo padre puede tener varios hijos y los hermanos son aquellos nodos que vienen del mismo padre.</p>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/relaciones.png" class="bd-placeholder-img img-fluid" width="100%" height="100%" >
+        </div>
+        <dt>Nodos Secundarios y valores de nodos</dt>
+        <p>Para acceder a los valores de texto se utiliza el innerHTML</p>
+
+        <p class="blog-post-meta">Se puede realizar de las siguientes 3 maneras:</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigonodo.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidanodo.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+<dt>Nodos raíz DOM</dt>
+        <p>Existen dos propiedades que permiten acceder a todo el documento HTML</p>
+        <p class="blog-post-meta">Estas dos propiedades se verán en el siguiente ejemplo</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigobody.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidabody.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+    </div>
+  <dt>Propiedad nodeName</dt>
+        <p>Se da el nombre del nodo (de la etiqueta), pues esta propiedad únicamente es de lectura </p>
+        <p class="blog-post-meta">En el siguiente ejemplo se verá de mejor manera</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigonodeName.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidanodeName.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <dt>Propiedad nodeValue</dt>
+        <p>Se devuelven 3 tipos de valores</p>
+        <ul>
+          <li><strong>Para elementos:</strong> Se devuelve el valor de null</li>
+          <li><strong>Para Texto:</strong> Se devuelve el mismo valor del texto.</li>
+          <li><strong>Para atributos:</strong> Se devuelve el mismo valor del atributo.</li>
+        </ul>
+    <dt>Propiedad nodeType</dt>
+        <p>Devuelve el tipo de nodo.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>NODO</th>
+              <th>TIPO</th>
+              <th>EJEMPLO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ELEMENT_NODE</td>
+              <td>1</td>
+              <td><pre><code>&lt;h1 class="heading"&gt;Header&lt;/h1&gt;</code></pre></td>
+            </tr>
+            <tr>
+              <td>ATTRIBUTE_NODE</td>
+              <td>2</td>
+              <td><pre><code>class="heading"</code></pre></td>
+            </tr>
+            <tr>
+              <td>TEXT_NODE</td>
+              <td>3</td>
+              <td>Ejemplo de texto</td>
+            </tr>
+            <tr>
+              <td>COMMENT_NODE</td>
+              <td>8</td>
+              <td><pre><code>&lt;!--comentario--&gt;</code></pre></td>
+            </tr>
+            <tr>
+              <td>DOCUMENT_NODE</td>
+              <td>9</td>
+              <td>El documento HTML mismo</td>
+            </tr>
+            <tr>
+              <td>DOCUMENT_TYPE_NODE</td>
+              <td>10</td>
+              <td><pre><code>&lt;!Doctype html&gt;</code></pre></td>
+            </tr>
+          </tbody>
+            
+        </table>
+        
+<!--DOM ANIMATION-->
+ <article class="blog-post">
+        
+        <h2 class="blog-post-title">Animación</h2>
+
+        <p>Al incluir en una página web una animación hay que diferenciar entre Interfaz de Usuario y animación de experiencia de usuario. </p>
+        <p>La percepción del ususario en una página se entiende mejor en una imágen en movimiento.</p>
+       <p>Como base se tiene que tener una página web básica</p>
+
+        <hr>
+        <dt>Contenido de animación</dt>
+        <p>Todas las animaciones deben sre relativas a un elemento contenedor</p>
+        <blockquote class="blockquote">
+          <pre><code>&lt;div id = "container"&gt;</code></pre>
+          <pre><code>&lt;div id = "animate"&gt;My animation will go here&lt;/div&gt;</code></pre>
+          <pre><code>&lt;/div&gt;</code></pre>
+        </blockquote>
+        
+        <dt>Estilo de los elmentos</dt>
+        <p>El elemento contenedor debe crearse con style = <strong>"position: relative"</strong></p>
+        <p>El elemento de animación se crea con style = <strong>"position: absolute"</strong></p>
+        <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codStyle.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidaStyle.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+  </div>
+<dt>Código de animación</dt>
+
+<p>Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua.</p>
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigoAnimacion.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <dt>Animación Completa</dt>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codAnimacion.png" class="bd-placeholder-img" width="350" height="550" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidaAnim.png" class="bd-placeholder-img" width="350" height="350" >
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<!--FIN DOM ANIMATION-->
+
+<!--NODOS DOM -->
+<article>
+  <h2 class="blog-post-title">ELEMENTOS DOM (NODOS)</h2>
+  <p>Para empezar se crea un nuevo elemento (nodo de elemento) para luego agregarlo a un elemento existente</p>
+  <ul>
+    <li>
+      <strong>Nuevos elementos HTML</strong>
+      <p>Un método utilizado es appendChild() que permite agregar el elemento como último hijo del padre</p>
+      <p>Una variante se puede utilizar el método insertBefore()</p>
+    </li>
+    <li>
+          <strong>Eliminar elementos HTML o un nodo secudario</strong>
+          <p>Un método utilizado es remove() que permite eliminar el elemento selecionado</p>
+          <p>Para poder ser eliminado, se debe encontrar el nodo principal</p>
+    </li>
+    <li>
+      <strong>Reemplazo de elementos HTML</strong>
+      <p>Para reemplazar un elemento </p>
+
+    </li>
+  </ul>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codRemove.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidaRemove.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- FIN NODOS DOM-->
+
+<article>
+  <h2 class="blog-post-title">LISTA DE NODOS DOM </h2>
+  <p>Un NodeListobjeto es una lista (colección) de nodos extraídos de un documento</p>
+  <p>Un NodeListobjeto es casi lo mismo que un HTMLCollectionobjeto.</p>
+  <ul>
+    <li>
+      <strong>Longitud de la lista de nodos HTML DOM</strong>
+      <p>La propiedad length define el número de nodos en una lista de nodos:</p><pre><code>myNodelist.length</code></pre>
+      
+    </li>
+
+  </ul>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codNodosL.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidaNodosL.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- Fin todo-->
+</article>
+
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic">JS HTML DOM Avanzado</h4>
+          <p class="mb-0">Se presentan varias técnicas para trabajar con los elementos HTML utilizando JavaScript avanzado</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="blog-footer">
+  <p>Universidad de las Fuerzas Armadas ESPE.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+
+    
+  </body>
+</html>
